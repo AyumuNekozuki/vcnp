@@ -27,10 +27,10 @@
           <section class="vci_item tab_content hide" id="vci_content">
             <h2>関連VCI</h2>
             <div class="iframe_list">
-              <a data-iframely-url :href="archive_doc_data.vci_01"></a>
-              <a data-iframely-url :href="archive_doc_data.vci_02"></a>
-              <a data-iframely-url :href="archive_doc_data.vci_03"></a>
-              <a data-iframely-url :href="archive_doc_data.vci_04"></a>
+              <iframe :src="archive_doc_data.vci_01" scrolling="no" frameborder="0"></iframe>
+              <iframe :src="archive_doc_data.vci_02" scrolling="no" frameborder="0"></iframe>
+              <iframe :src="archive_doc_data.vci_03" scrolling="no" frameborder="0"></iframe>
+              <iframe :src="archive_doc_data.vci_04" scrolling="no" frameborder="0"></iframe>
             </div>
           </section>
           <section class="nico_item tab_content hide" id="nico_content">
@@ -47,10 +47,10 @@
           <section class="url_item tab_content hide" id="url_content">
             <h2>関連リンク</h2>
             <div class="iframe_list">
-              <a data-iframely-url :href="archive_doc_data.url_01"></a>
-              <a data-iframely-url :href="archive_doc_data.url_02"></a>
-              <a data-iframely-url :href="archive_doc_data.url_03"></a>
-              <a data-iframely-url :href="archive_doc_data.url_04"></a>
+              <iframe :src="archive_doc_data.url_01" scrolling="no" frameborder="0"></iframe>
+              <iframe :src="archive_doc_data.url_02" scrolling="no" frameborder="0"></iframe>
+              <iframe :src="archive_doc_data.url_03" scrolling="no" frameborder="0"></iframe>
+              <iframe :src="archive_doc_data.url_04" scrolling="no" frameborder="0"></iframe>
             </div>
           </section>
         </div>
@@ -323,6 +323,32 @@ export default {
       archive_doc_data.nico_05 = nicourl;
     }
 
+    if(archive_doc_data.vci_01){
+      archive_doc_data.vci_01 = "https://hatenablog.com/embed?url=" + archive_doc_data.vci_01;
+    }
+    if(archive_doc_data.vci_02){
+      archive_doc_data.vci_02 = "https://hatenablog.com/embed?url=" + archive_doc_data.vci_02;
+    }
+    if(archive_doc_data.vci_03){
+      archive_doc_data.vci_03 = "https://hatenablog.com/embed?url=" + archive_doc_data.vci_03;
+    }
+    if(archive_doc_data.vci_04){
+      archive_doc_data.vci_04 = "https://hatenablog.com/embed?url=" + archive_doc_data.vci_04;
+    }
+
+    if(archive_doc_data.url_01){
+      archive_doc_data.url_01 = "https://hatenablog.com/embed?url=" + archive_doc_data.url_01;
+    }
+    if(archive_doc_data.url_02){
+      archive_doc_data.url_02 = "https://hatenablog.com/embed?url=" + archive_doc_data.url_02;
+    }
+    if(archive_doc_data.url_03){
+      archive_doc_data.url_03 = "https://hatenablog.com/embed?url=" + archive_doc_data.url_03;
+    }
+    if(archive_doc_data.url_04){
+      archive_doc_data.url_04 = "https://hatenablog.com/embed?url=" + archive_doc_data.url_04;
+    }
+
 
     archive_doc_data.pages = "pages_" + archive_doc_data.pages;
 
@@ -362,9 +388,6 @@ export default {
 
       var addtoany_init = "<script>var a2a_config = a2a_config || {};a2a_config.locale = 'ja';<"+ "/script><script src='https://static.addtoany.com/menu/page.js'><" + "/script>";
       $('#addtoany_init').append(addtoany_init);
-
-      var embedjs_init = "<script async charset='utf-8' src='//cdn.iframe.ly/embed.js?api_key=2e3587807406fa2350bd4d'><" + "/script>";
-      $('#vci_content .iframe_list').append(embedjs_init);
 
       var viewerinit = "<script>var viewer = new Viewer(document.getElementById('"+ check_count_id +"'));<" + "/script>";
       setTimeout(function(){

@@ -15,7 +15,7 @@ export default {
       { hid: 'og:url', property: 'og:url', content: 'https://vcnp.nekozuki.me' },
       { hid: 'og:title', property: 'og:title', content: 'Vキャス新聞' },
       { hid: 'og:description', property: 'og:description', content: '１週間のVキャスでの出来事を新聞としてお届け！' },
-      //{ hid: 'og:image', property: 'og:image', content: 'https://example.com/img/ogp/common.jpg' },
+      { hid: 'og:image', property: 'og:image', content: 'https://vcnp.nekozuki.me/img/ogp.png' },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@nekozuki_dev' },
     ],
