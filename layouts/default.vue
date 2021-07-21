@@ -24,6 +24,7 @@ body{
   box-sizing: border-box;
   background: #F2F5F7;
   font-feature-settings: "palt";
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Hiragino Kaku Gothic ProN,Meiryo,sans-serif;
 }
 
 .prev_pages{
