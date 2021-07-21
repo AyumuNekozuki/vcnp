@@ -18,6 +18,9 @@
             <nuxt-link class="header_links blue" to="/newest"
               >最新刊を読む</nuxt-link
             >
+            <button id="sp_header_button" class="sp_header_button" @click="sp_header_button_push">
+              <font-awesome-icon :icon="['fas', 'bars']" />
+            </button>
           </div>
         </div>
         <div class="wrap solid">
@@ -54,6 +57,37 @@
     </header>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    sp_header_button_push(){
+      if($('#sp_header_button').hasClass('visible')){
+        //解除
+        $(".dis_hide").removeClass("dis_hide");
+        $("#sp_header_button").removeClass("visible");
+      }else{
+        //有効化
+        $("#__layout .navigation .wrap.wide a").addClass("dis_hide");
+        $("#__layout .navigation .wrap.solid").addClass("dis_hide");
+        $("#sp_header_button").addClass("visible");
+      }
+    }
+  },
+  mounted(){
+    if(process.client){
+      $("a").on("click", function() {
+        if($('#sp_header_button').hasClass('visible')){
+          $(".dis_hide").removeClass("dis_hide");
+          $("#sp_header_button").removeClass("visible");
+        }
+      });
+
+
+    }
+  }
+}
+</script>
 
 <style>
 header {

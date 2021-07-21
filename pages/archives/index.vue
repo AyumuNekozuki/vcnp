@@ -152,7 +152,7 @@ export default {
         clearInterval(Interval);
       }else{
 
-        storageRef.child('archives/'+ ids +'/head_986x1138.jpeg').getDownloadURL().then(function(imgurl){
+        storageRef.child('archives/'+ ids +'/head.png').getDownloadURL().then(function(imgurl){
           if(!($('img[src="'+ imgurl +'"').length)){
             $('.archive_headimg').eq(count - 1).prepend("<img id='old_thumbnail' src='"+ imgurl + "' alt='"+ ids +"'>");
           }

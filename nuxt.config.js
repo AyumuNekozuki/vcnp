@@ -32,7 +32,8 @@ export default {
   css: [
     'destyle.css',
     '~/assets/css/watchapp.css',
-    '~/assets/css/console.css'
+    '~/assets/css/console.css',
+    '~/assets/css/spmode.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

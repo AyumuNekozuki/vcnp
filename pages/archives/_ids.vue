@@ -379,7 +379,7 @@ export default {
     }
  
     function watch_get_img(){
-      storageRef.child('archives/'+ archives_id_img +'/' + (count + 1) +'_986x1138.jpeg').getDownloadURL().then(function(imgdata) {
+      storageRef.child('archives/'+ archives_id_img +'/' + (count + 1) +'.png').getDownloadURL().then(function(imgdata) {
         if(!($('img[src="'+ imgdata +'"').length)){
           $('.watch_area').append("<img class='watch_imgs' id='pages_"+ count +"' src='"+ imgdata + "'>");
         }
