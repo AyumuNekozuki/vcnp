@@ -10,14 +10,15 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '１週間のVキャスでの出来事を新聞としてお届け！' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: '@nekozuki_dev' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'Vキャス新聞' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:url', property: 'og:url', content: 'https://vcnp.nekozuki.me' },
       { hid: 'og:title', property: 'og:title', content: 'Vキャス新聞' },
       { hid: 'og:description', property: 'og:description', content: '１週間のVキャスでの出来事を新聞としてお届け！' },
       { hid: 'og:image', property: 'og:image', content: 'https://vcnp.nekozuki.me/img/ogp.png' },
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@nekozuki_dev' },
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },

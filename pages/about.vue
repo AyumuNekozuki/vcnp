@@ -108,8 +108,8 @@ export default {
   data() {
     return {
       meta: {
-        title: "Vキャス新聞とは？",
-        description: "Vキャス新聞とは？",
+        title: "Vキャス新聞とは",
+        description: "Vキャス新聞とは",
         type: "pages",
         url: "https://vcnp.nekozuki.me/about",
       },
