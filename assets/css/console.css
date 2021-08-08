@@ -202,6 +202,7 @@ main.console_list .list_header .wrap a:hover{
 main.console_list .list_item{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   padding: 1em;
   border-bottom: 1px solid #ddd;
   background-color: #fff;
@@ -215,14 +216,13 @@ main.console_list .list_item .id{
 }
 main.console_list .list_item .title{
   width: 65%;
-  height: 1.2em;
   display: flex;
+  flex-wrap: wrap;
 }
 
 main.console_list .list_item .title>span{
-  margin: 0 1em 0 0;
   width: 50%;
-  height: 1.2em;
+  padding: .25rem .25rem;
   text-overflow: ellipsis;
   overflow-x: hidden;
   white-space: nowrap;
